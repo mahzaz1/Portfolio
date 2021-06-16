@@ -1,0 +1,24 @@
+// variablles
+
+$main-clr: #ffbc00;
+$light-clr: #f4f4f4;
+$med-clr: #ccc;
+$dark-clr: #333;
+$bg-img: url("img/showcase.jpg");
+
+
+@function set-color ($color){
+    
+    @if (lightness($color) > 50){
+        @return #333;
+        }
+        @else{
+            @return #fff;
+        }
+}
+
+@mixin transform ($property) {
+    --webkit-transform: $property;
+    --ms-transform: $property;
+    transform: $property;
+}

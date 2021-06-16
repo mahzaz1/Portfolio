@@ -1,0 +1,131 @@
+@media (max-width:800px){
+    .header-home{
+        height: 30rem;
+
+        .header-content{
+            h1{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        .social{
+            display: none;
+        }
+    }
+    .header-about{
+        height: 10%;
+        background-position: 10% 23%;
+
+        .social{
+            display: none;
+        }
+    }
+
+    .main-nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+.home-a .specials ,
+.home-b .stats ,
+.home-c .process ,
+.about-d .testimonials ,
+.work-a .items ,
+#contact-b .contact-info{
+    grid-template-columns: repeat(1,1fr);
+}
+
+.about-a{
+    .about-info{
+        grid-template-areas:
+        'bioimg '
+        ' bio'
+        'aw1 ' 
+        'aw2' 
+        'aw3' ;
+    }
+}
+.about-c{
+    display: none;
+}
+.about-b{
+    .h1::after{
+        content: '99%';
+        margin-left: 18.3rem;
+      }
+      .h2::after{
+        content: '80%';
+        margin-left: 14.8rem;
+      }
+      .h3::after{
+        content: '99%';
+        margin-left: 19rem;
+      }
+      .h4::after{
+        content: '50%';
+        margin-left: 11rem;
+      }
+      .h5::after{
+        content: '60%';
+        margin-left: 15.5rem;
+      }
+      .h6::after{
+        content: '70%';
+        margin-left: 16.5rem;
+      }
+}
+
+.work-b{
+    .email{
+        padding:0.8rem 1rem;
+        font-size: 1.5rem;
+    }
+}
+.contact-showcase{
+    height: 58vh;
+    h2{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .bottom-line{
+        margin:1rem 2px ;
+        height: 2px;
+        width: 4rem;
+      }
+}
+
+#contact{
+    &-a{
+        .text-field{
+            grid-template-areas: 
+            'name '
+            'email'
+            'subject '
+            'phone'
+            'messege';
+        }
+    }
+        &-b {
+            div{
+                border-bottom: 2px solid $med-clr;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+
+                &:last-child{
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+}
+footer{
+    .footer-content{
+        flex-direction: column ;
+        padding: 1rem 0;
+    }
+}
+}
